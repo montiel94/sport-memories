@@ -1,9 +1,8 @@
 [build]
-  # Comando para compilar tu sitio (ej. npm run build, gatsby build, next build)
-  command = "npm run build"
-  
-  # Carpeta que contiene los archivos estáticos finales que se subirán a la web
-  publish = "dist/sport-memories/browser"
+  command = "ng build"
+  publish = "dist/laura-films/browser"
 
-[build.environment]
-  NODE_VERSION = "24"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
