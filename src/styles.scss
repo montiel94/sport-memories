@@ -1,0 +1,90 @@
+:root {
+  --sm-black: #000000;
+  --sm-white: #ffffff;
+  --sm-muted: #595959;
+  --sm-border: 1px solid var(--sm-black);
+  --sm-gutter: 48px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--sm-white);
+  color: var(--sm-black);
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--sm-black);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--sm-muted);
+}
+
+.muted {
+  color: var(--sm-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 18px 40px;
+  border: var(--sm-border);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: var(--sm-white);
+  color: var(--sm-black);
+
+  &--primary {
+    background: var(--sm-black);
+    color: var(--sm-white);
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    --sm-gutter: 20px;
+  }
+}

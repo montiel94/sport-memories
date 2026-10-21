@@ -1,0 +1,58 @@
+.gallery {
+  padding: 0 var(--sm-gutter) 128px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  &__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 48px;
+    border-top: var(--sm-border);
+  }
+
+  &__title {
+    font-size: clamp(28px, 3.2vw, 40px);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  &__lead {
+    max-width: 380px;
+    font-size: 15px;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  &__item {
+    flex: 1 1 280px;
+    min-width: 0;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: var(--sm-border);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

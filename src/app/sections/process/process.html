@@ -1,0 +1,17 @@
+<section id="como-funciona" class="process">
+  <div class="container process__inner">
+    <div class="process__intro">
+      <span class="eyebrow">Cómo funciona</span>
+      <h2 class="process__title">Cuatro pasos entre la meta y tu pared.</h2>
+    </div>
+    <ol class="steps">
+      @for (step of steps; track step.title; let i = $index) {
+        <li class="step">
+          <span class="step__number">{{ (i + 1).toString().padStart(2, '0') }}</span>
+          <h3 class="step__title">{{ step.title }}</h3>
+          <p class="step__text muted">{{ step.text }}</p>
+        </li>
+      }
+    </ol>
+  </div>
+</section>

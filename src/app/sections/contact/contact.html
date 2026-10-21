@@ -1,0 +1,14 @@
+<section id="contacto" class="contact">
+  <div class="contact__inner">
+    <span class="eyebrow">Cotiza tu cuadro</span>
+    <h2 class="contact__title">Cuéntanos tu carrera.</h2>
+    <p class="contact__lead muted">
+      Escríbenos con el nombre de la competencia y te contamos cómo sería tu cuadro. Valor desde
+      {{ site.price }}.
+    </p>
+    <div class="actions">
+      <a class="btn btn--primary" [href]="'mailto:' + site.email">Escribir por correo</a>
+      <a class="btn" [href]="site.instagramUrl">Instagram {{ site.instagramUser }}</a>
+    </div>
+  </div>
+</section>

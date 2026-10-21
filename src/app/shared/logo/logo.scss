@@ -1,0 +1,41 @@
+:host {
+  display: block;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 132px;
+  color: var(--sm-black);
+
+  &__top,
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+  }
+
+  &__top {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__bottom {
+    font-size: 9.5px;
+    font-weight: 300;
+  }
+
+  &--hero {
+    gap: clamp(14px, 2.4vw, 26px);
+    width: 100%;
+
+    .logo__top {
+      font-size: clamp(56px, 12vw, 112px);
+    }
+
+    .logo__bottom {
+      font-size: clamp(22px, 4.6vw, 44px);
+    }
+  }
+}
