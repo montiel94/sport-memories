@@ -1,6 +1,6 @@
 [build]
   command = "ng build"
-  publish = "dist/laura-films/browser"
+  publish = "dist/sport-memories/browser"
 
 [[redirects]]
   from = "/*"
