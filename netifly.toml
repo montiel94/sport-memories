@@ -3,7 +3,7 @@
   command = "npm run build"
   
   # Carpeta que contiene los archivos estáticos finales que se subirán a la web
-  publish = "dist"
+  publish = "dist/sport-memories/browser"
 
 [build.environment]
   NODE_VERSION = "24"
