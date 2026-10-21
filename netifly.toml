@@ -1,0 +1,9 @@
+[build]
+  # Comando para compilar tu sitio (ej. npm run build, gatsby build, next build)
+  command = "npm run build"
+  
+  # Carpeta que contiene los archivos estáticos finales que se subirán a la web
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
